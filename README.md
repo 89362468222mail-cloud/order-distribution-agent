@@ -47,15 +47,15 @@ AI-агент для распределения новых заказов пос
 ## Состав сдачи
 
 - [x] скелет репозитория и README
-- [ ] docs/questions.md — вопросы заказчику (>=5, кому / зачем / допущение)
-- [ ] docs/algorithm.md — псевдокод, таблица решений, сложные случаи
-- [ ] docs/assumptions.md — принятые допущения
-- [ ] data/generator.py + 3 xlsx + etalon.xlsx
-- [ ] agent/ — SKILL.md, SYSTEM_PROMPT.txt, INSTALL.md, scripts/, references/
-- [ ] tests/ — 3 прогона, метрики
-- [ ] docs/report.pdf
-- [ ] dist/agent.zip, dist/test_data.zip
-- [ ] мотивация (3 вопроса) для резюме
+- [x] docs/questions.md — вопросы заказчику (>=5, кому / зачем / допущение)
+- [x] docs/algorithm.md — псевдокод, таблица решений, сложные случаи
+- [x] docs/assumptions.md — принятые допущения
+- [x] data/generator.py + 3 xlsx + etalon.xlsx
+- [x] agent/ — SKILL.md, SYSTEM_PROMPT.txt, INSTALL.md, scripts/, references/
+- [x] tests/ — 3 прогона, метрики
+- [x] docs/report.pdf
+- [x] dist/agent.zip, dist/test_data.zip
+- [x] мотивация (3 вопроса) для резюме
 
 ## Структура
 
