@@ -260,6 +260,17 @@ def build_etalon():
                 reason = "не-air, не Китай -> мультимодальные"
             ful_orders_seen[order] = num
         rows.append([num, order, status, group, logist, reason])
+    # Ловушка: вся ММ-группа недоступна → «требует внимания»
+    mm_available = any(
+        emp[1] == "Работает" and "мультимодальн" in emp[2].lower()
+        for emp in EMPLOYEES
+    )
+    if not mm_available:
+        for r in rows:
+            if r[3] == "специалист по мультимодальным перевозкам":
+                r[2] = "требует внимания"
+                r[4] = "не определено"
+                r[5] = r[5] + "; вся группа недоступна"
     return ETALON_HEADERS, rows
 
 
